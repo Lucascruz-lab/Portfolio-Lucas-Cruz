@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
 
 * {
     padding: 0;
@@ -10,24 +10,26 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Inter", sans-serif;
-    
+    margin: 0;
+    padding: 20px;
 }
 
 header {
-   /* background-color: #ffffff;
-    border-radius: 50px;*/
-
     margin: 5px 5px;
-
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-
     width: 100%;
+}
 
+.logo {
+    color: #0066cc;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 nav ul {
@@ -50,7 +52,6 @@ nav ul li a:hover {
     background-color: #0066cc;
     color: #ffffff;
     border-radius: 50px;
-
 }
 
 main {
@@ -58,7 +59,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
     width: 100%;
     margin-top: 40px;
 }
@@ -68,14 +68,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
     width: 100%;
-    margin-top: 20px;
-
-    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px;
 }
 
-img {
+.home img {
     margin-left: 15px;
     width: 150px;
     height: 150px;
@@ -84,11 +82,10 @@ img {
     border: 2px solid #ffffff;
 }
 
-.home h1{
+.home h1 {
     margin-bottom: 10px;
     font-weight: 700;
     color: #0066cc;
-    
     font-size: 38px;
 }
 
@@ -100,36 +97,30 @@ img {
 .about {
     background-color: #010101;
     color: #ffffff;
-    height: 70vh;
     width: 100%;
     margin: 10px 0 0 0;
     padding: 10px;
-
     margin-top: 35px;
 }
 
 .about h4 {
     font-weight: 500;
     margin-bottom: 10px;
-
     color: #0066cc;
 }
 
-
 .about h2 {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .about p {
-   width: 50%;
+    width: 50%;
 }
 
 .portfolio {
-    height: 70vh;
     width: 100%;
     padding: 10px;
     margin-top: 50px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,9 +129,8 @@ img {
 
 .portfolio h4 {
     color: #0066cc;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
     font-weight: 500;
-
 }
 
 .portfolio h3 {
@@ -152,4 +142,78 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.projeto-box {
+    background-color: #0066cc;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    margin-top: 30px;
+}
+
+.projeto-box:hover {
+    transform: scale(1.05);
+}
+
+.projeto-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projeto-titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.projeto-descricao {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .projeto-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto-box {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about p {
+        width: 100%;
+    }
 }
