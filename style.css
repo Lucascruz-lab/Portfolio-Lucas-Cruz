@@ -39,7 +39,7 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 nav ul li a {
@@ -104,7 +104,7 @@ main {
 }
 
 .about h4 {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
     color: #0066cc;
 }
@@ -130,7 +130,7 @@ main {
 .portfolio h4 {
     color: #0066cc;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .portfolio h3 {
@@ -172,6 +172,56 @@ main {
 .projeto-descricao {
     font-size: 1em;
     line-height: 1.6;
+}
+
+.contato {
+    background-color: #010101;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin: 10px 0 0 0;
+
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    text-align: left;
+}
+
+.contato-titulo {
+    color: #0066cc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contato ul {
+    list-style-type: none;
+}
+
+.contato ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contato ul li h4, .contato ul li p {
+    margin: 0;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.contato h4 {
+    color: #0066cc;
+    padding: 0;
+}
+
+.contato ul li ion-icon {
+    margin-top: 5px;
+    color: #0066cc;
+    font-size: 25px;
+    position: relative;
 }
 
 /* Media Queries */
