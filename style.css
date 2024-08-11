@@ -6,12 +6,18 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Inter", sans-serif;
     margin: 0;
-    padding: 20px;
+    
 }
 
 header {
@@ -99,7 +105,7 @@ main {
     color: #ffffff;
     width: 100%;
     margin: 10px 0 0 0;
-    padding: 10px;
+    
     margin-top: 35px;
 }
 
@@ -107,14 +113,19 @@ main {
     font-weight: 600;
     margin-bottom: 10px;
     color: #0066cc;
+    margin-top: 20px;
+    margin-left: 15px;
+    
 }
 
 .about h2 {
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 
 .about p {
     width: 50%;
+    margin-left: 15px;
 }
 
 .portfolio {
@@ -206,10 +217,15 @@ main {
     align-items: center;
 }
 
-.contato ul li h4, .contato ul li p {
+.contato ul li h4, .contato ul li a {
     margin: 0;
     margin-left: 10px;
     z-index: 2;
+}
+
+.contato a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .contato h4 {
@@ -224,6 +240,31 @@ main {
     position: relative;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #0066cc;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ffffff;
+} 
+
 /* Media Queries */
 @media (max-width: 1024px) {
     header {
@@ -237,8 +278,13 @@ main {
         gap: 10px;
     }
 
+    .about p, .portfolio p {
+        width: 70%;
+    }
+
+
     .projeto-box {
-        width: 45%;
+        width: 70%;
     }
 }
 
@@ -249,7 +295,7 @@ main {
     }
 
     .projeto-box {
-        width: 100%;
+        width: 90%;
     }
 
     nav ul {
@@ -263,7 +309,7 @@ main {
         text-align: center;
     }
 
-    .about p {
-        width: 100%;
+    .about p, .portfolio p {
+        width: 90%;
     }
 }
