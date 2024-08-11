@@ -217,16 +217,12 @@ main {
     align-items: center;
 }
 
-.contato ul li h4, .contato ul li a {
+.contato ul li h4, .contato ul li p {
     margin: 0;
     margin-left: 10px;
     z-index: 2;
 }
 
-.contato a {
-    text-decoration: none;
-    color: #ffffff;
-}
 
 .contato h4 {
     color: #0066cc;
