@@ -8,33 +8,31 @@
 </head>
 <body>
     <header>
-        <div id="menu-logo">
-            <p>lucas.</p>
-        </div>
-        <div id="menu">
-            <nav id="menu-navegacao">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Sobre">Sobre mim</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div id="menu-logo"><p>lucas.</p></div>
+        <button id="menu-toggle" aria-label="abrir menu">&#9776;</button>
+        <nav id="menu-navegacao">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="Home">
             <h1>Olá, <span>eu sou</span></h1>
             <h1>Desenvolvedor front-end.</h1>
-            <button>Download CV</button>
+            <button><a href="" download>Download CV</a></button>
         </section>
         
         <section id="Sobre">
-            <img class="animete" src="./assets/Imagem-Perfil.png" alt="foto de lucas">
+            <img src="./assets/Imagem-Perfil.png" alt="foto de lucas">
             <div id="Sobre-conteudo">
-                <h2 class="animate">Sobre mim.</h2>
+                <h2 id="Sobre-titulo">Sobre mim.</h2>
                 <h4>Desenvolvedor front-end</h4>
-                <p class="animate">Olá, sou <span>Lucas Cruz</span>, desenvolvedor front-end apaixonado por criar sites funcionais e visualmente agradáveis. Com o aprendizado em HTML, CSS e JavaScript, descobri o quanto posso impactar a experiência do usuário ao desenvolver interfaces interativas e eficientes.
+                <p>Olá, sou <span>Lucas Cruz</span>, desenvolvedor front-end apaixonado por criar sites funcionais e visualmente agradáveis. Com o aprendizado em HTML, CSS e JavaScript, descobri o quanto posso impactar a experiência do usuário ao desenvolver interfaces interativas e eficientes.
                 Meu objetivo é continuar evoluindo como desenvolvedor, criando soluções que aliam design e funcionalidade, e buscando sempre novos desafios para aprimorar minhas habilidades. No futuro, planejo expandir meus conhecimentos para o desenvolvimento full-stack, com o objetivo de criar soluções completas e inovadoras.</p>
             </div>
             
@@ -60,42 +58,49 @@
                 </div>
             </div>
         </section>
-        <!--
-
+        
         <section id="Portfolio">
-            <h4>Portfólio</h4>
-
-            <div class="Portfolio-card">
-                <img src="" alt="imagem projeto do portfólio">
-                <h2 class="Portfolio-titulo">Projeto 1</h2>
-                <img src="" alt="">
-                <img src="" alt="">
-                <button>Preview</button>
-                <button>Código</button>
+            <h2 class="Portfolio-titulo">Portfólio</h2>
+            <div class="Portfolio-cards">
+                <div class="card">
+                    <img src="./assets/pagehome.jpeg" alt="imagem projeto do portfólio">
+                    <h4 class="titulo">Portfólio</h4>
+                    
+                    
+                    <button class="Preview"><a href="">Preview</a></button>
+                    <button class="Codigo"><a href="https://github.com/Lucascruz-lab/Portfolio-Lucas-Cruz">Código</a></button>
+                </div>
+                <div class="card">
+                    <img src="./assets/imagem-CafeTerra.jpeg" alt="imagem projeto do CaféTerra">
+                    <h4 class="titulo">Café Terra</h4>
+                    
+                    
+                    <button class="Preview"><a href="">Preview</a></button>
+                    <button class="Codigo"><a href="">Código</a></button>
+                </div>
             </div>
         </section>
-
+        
         <section id="Contato">
-            <h2 class="contato-titulo">Contato</h2>
-            <div>
+            <h2 class="Contato-titulo">Contato.</h2>
+            <div id="form">
                 <form action="" method="post">
                     <input type="text" name="name" id="name" placeholder="Nome">
                     <input type="email" name="email" id="email" placeholder="E-mail">
-                    <input type="text" name="message" id="message" placeholder="Mensagem">
-                    <button>enviar</button>
+                    <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                    <button>Enviar</button>
                 </form>
                 <ul>
                     <li>
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <h4>Email</h4>
-                        <p>lucaseduardodacruz849@gamail.com</p>
+                        <a href="mailto:lucaseduardodacruz849@gmail.com"><ion-icon name="mail-outline"></ion-icon>lucaseduardodacruz849@gmail.com</a>
+                    </li>
+                    
+                    <li>
+                       <a href="https://www.google.com.br/maps/place/Hortol%C3%A2ndia,+SP/@-22.8770294,-47.2089985,13z/data=!3m1!4b1!4m6!3m5!1s0x94c8b95bfb508f39:0x1ce857c1058169b4!8m2!3d-22.8573469!4d-47.2210564!16zL20vMDQwaGRn?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"><ion-icon name="location-outline"></ion-icon>Hortolândia, São Paulo.</a>
                     </li>
 
                     <li>
-                        <ion-icon name="location-outline"></ion-icon>
-                        <h4>Address</h4>
-                        <p>Hortolândia, Brasil.</p>
-                        
+                        <a href="tel:+5519987801978"><ion-icon name="call-outline"></ion-icon>(19) 987801978</a>
                     </li>
                 </ul>
             </div>
@@ -115,7 +120,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
--->
 
 </body>
 </html>
