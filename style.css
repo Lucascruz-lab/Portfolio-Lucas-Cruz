@@ -473,12 +473,15 @@ ion-icon {
 }
 
 footer {
-
     padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+footer ion-icon:hover {
+    color: #ffc107;
 }
 
 /* Estilo Base (Desktop-First) */
