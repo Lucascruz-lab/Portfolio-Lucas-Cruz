@@ -12,6 +12,7 @@ Este portfólio foi desenvolvido usando HTML, CSS e algumas bibliotecas externas
 
 - `index.html`: Página principal do portfólio.
 - `style.css`: Estilos personalizados para o site.
+- `script.js`: animação do botão de menu.
 - `assets/`: Pasta contendo imagens e outros recursos estáticos.
 - `README.md`: Este arquivo de documentação.
 
@@ -19,6 +20,7 @@ Este portfólio foi desenvolvido usando HTML, CSS e algumas bibliotecas externas
 
 - **HTML5**: Marcações semânticas para a estrutura do site.
 - **CSS3**: Estilização personalizada para layout e design.
+- **JavaScript**: Criação do botão do menu de navegação.
 - **Ionicons**: Biblioteca de ícones para ícones de redes sociais e contato.
 
 ## Deploy
@@ -29,11 +31,15 @@ Este site está hospedado no GitHub Pages. Você pode acessá-lo [aqui](https://
 
 ### Home
 
-Apresenta uma breve introdução sobre quem eu sou e minha especialização.
+Apresenta uma breve introdução sobre quem eu sou e minha especialização e com um botão para baixar meu cv.
 
 ### Sobre Mim
 
-Informações detalhadas sobre minha formação, habilidades e experiência.
+Informações detalhadas sobre mim e habilidades.
+
+### Serviços 
+
+Um pouco dos serviços que ofereço.
 
 ### Projetos
 

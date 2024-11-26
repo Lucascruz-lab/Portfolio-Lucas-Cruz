@@ -85,6 +85,10 @@ header{
     display: none; /* Esconde o ícone no desktop */
     font-size: 2rem;
     cursor: pointer;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #fff;
+    border: none;
 }
 
 main {
@@ -278,9 +282,10 @@ main {
 }
 
 .Portfolio-cards .card img {
-    width: 300px;
+    width: 400px;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 8px;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -295,9 +300,34 @@ main {
     font-family: "Roboto Slab", serif;
 }
 
+.icons {
+    display: flex; /* Alinha os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 8px; /* Espaçamento entre os ícones */
+    margin-top: 8px; /* Espaço entre o título e os ícones */
+    font-size: 24px; /* Ajusta o tamanho dos ícones */
+    padding: 0 0 1.2em 0;
+}
+
+.card ion-icon {
+    color: #f16529; /* Cor do ícone HTML5 */
+    transition: transform 0.2s ease;
+}
+
+.card ion-icon:nth-child(2) {
+    color: #2965f1; /* Cor do ícone CSS3 */
+}
+
+.card ion-icon:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+
+
 .Preview {
     border-radius: 10px;
     border: none;
+    text-decoration: none;
     padding: 8px;
     background-color: #ffc107;
     color: #fff;
@@ -309,6 +339,7 @@ main {
     border-radius: 10px;
     border: none;
     padding: 8px;
+    text-decoration: none;
     background-color: #2e2e2e;
     color: #fff;
     font-weight: 600;
@@ -430,7 +461,7 @@ ul li a {
     color: #fff;
 }
 
-ul li a, ion-icon:hover {
+#Contato ion-icon:hover {
     color: #ffc107;
 }
 
@@ -504,6 +535,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
+        flex-direction: row;
         padding: 10px 20px;
     }
 
@@ -538,7 +570,7 @@ footer {
 
     #menu-navegacao ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 8px;
     }
 
@@ -627,7 +659,7 @@ footer {
 
 @media (max-width: 480px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -637,7 +669,7 @@ footer {
     }
 
     #menu-navegacao ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
     }
 
