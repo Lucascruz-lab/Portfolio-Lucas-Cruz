@@ -318,6 +318,10 @@ main {
     color: #2965f1; /* Cor do ícone CSS3 */
 }
 
+.card ion-icon:nth-child(3){
+    color: #eab105;
+}
+
 .card ion-icon:hover {
     transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
