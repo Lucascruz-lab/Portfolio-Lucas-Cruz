@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Lucas Cruz</title>
+    <title>Lucascruz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div id="menu-logo"><p>lucas.</p></div>
+        <div id="menu-logo"><p>Lucascruz.</p></div>
         <button id="menu-hamburguer" onclick="toggleMenu()">☰</button>
         <nav id="menu-navegacao">
             <ul>
@@ -17,50 +17,59 @@
                 <li><a href="#Serviços">Serviços</a></li>
                 <li><a href="#Portfolio">Projetos</a></li>
                 <li><a href="#Contato">Contato</a></li>
+                <li><a href="" id="Telefone"></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="Home">
-            <h1>Olá, <span>eu sou</span></h1>
-            <h1>Desenvolvedor front-end.</h1>
-            <button><a href="./assets/Lucas Eduardo da Cruz.pdf" download>Download CV</a></button>
+            <h1>Olá, eu sou Lucas.</h1>
+            <h1>Desenvolvedor</h1>
+            <h1><span>Front</span>end</h1>
+            <p>Sou um desenvolvedor front-end do Brasil, criando interfaces limpas, modernas e focadas na experiência do usuário.</p>
+            <button><a href="#Contato">Entre em contato</a></button>
+            <button><a href="#Portfolio">Projetos</a></button>
         </section>
         
         <section id="Sobre">
             <img src="./assets/Imagem-Perfil.png" alt="foto de lucas">
             <div id="Sobre-conteudo">
-                <h2 id="Sobre-titulo">Sobre mim.</h2>
-                <h4>Desenvolvedor front-end</h4>
-                <p>Olá, sou <span>Lucas Cruz</span>, desenvolvedor front-end apaixonado por criar sites funcionais e visualmente agradáveis. Com o aprendizado em HTML, CSS e JavaScript, descobri o quanto posso impactar a experiência do usuário ao desenvolver interfaces interativas e eficientes.
-                Meu objetivo é continuar evoluindo como desenvolvedor, criando soluções que aliam design e funcionalidade, e buscando sempre novos desafios para aprimorar minhas habilidades. No futuro, planejo expandir meus conhecimentos para o desenvolvimento full-stack, com o objetivo de criar soluções completas e inovadoras.</p>
+                <h2 id="Sobre-titulo"><span>Sobre</span> mim.</h2>
+                <h4>Código bem escrito, desing intuitivo e experiêcias que marcam.</h4>
+                <p>Sou um desenvolvedor front-end do Brasil, focado em criar interfaces modernas, intuitivas e responsivas.Para mim, desing vai além de estética - ele precisa ser funcional e proporcionar a melhor experiênca possíves para o usuário. Meu objetivo é transformar ideias em projetos digitais que se destacam, unindo código limpo, minimalismo e usabilidade.
+                </p>
+            </div>
+            <div id="Sobre-habilidades">
+                <h2>Minhas Habilidades</h2>
+                <ion-icon name="logo-javascript"></ion-icon>
+                <ion-icon name="logo-html5"></ion-icon>
+                <ion-icon name="logo-css3"></ion-icon>
             </div>
             
         </section>
         
         <section id="Serviços">
-            <h2 id="Serviços-titulo">Serviços.</h2>
+            <h2 id="Serviços-titulo">Serviços</h2>
             <div class="Serviços-cards">
                 <div class="card">
                     <img src="./assets/🦆 icon _Document One Page_.svg" alt="">
-                    <h4>Landing Page</h4>
-                    <p>Páginas personalizadas que são projetadas para conversão, com foco em estética e performance.</p>
+                    <h4>Criação de Sites Responsivos</h4>
                 </div>
                 <div class="card">
                     <img src="./assets/🦆 icon _Laptop Code_.svg" alt="">
-                    <h4>Web Sites</h4>
-                    <p>Sites responsivos, rápidos e funcionais, que oferecem uma experiência de usuário fluída.</p>
+                    <h4>Desenvolvimento de Landing Pages</h4>
                 </div>
                 <div class="card">
                     <img src="./assets/🦆 icon _gui plugin seo_.svg" alt="">
-                    <h4>SEO</h4>
-                    <p>Implementação de práticas para melhorar a visibilidade do seu site nos motores de busca, com foco em SEO básico.</p>
+                    <h4>UI Design no figma</h4>
                 </div>
             </div>
+
+            <a href="#Portfolio">Veja meus projetos!</a>
         </section>
         
         <section id="Portfolio">
-            <h2 class="Portfolio-titulo">Portfólio.</h2>
+            <h2 class="Portfolio-titulo">Meus Projetos</h2>
             <div class="Portfolio-cards">
                 <div class="card">
                     <img src="./assets/pagehome.jpeg" alt="imagem projeto do portfólio">
@@ -104,6 +113,8 @@
                     <a class="Codigo" href="https://github.com/Lucascruz-lab/Tela-de-Login" target="_blank" rel="noopener noreferrer">Código</a>
                 </div>
             </div>
+
+            <a href="#Contato">Entre em contato</a>
         </section>
         
         <section id="Contato">
@@ -113,11 +124,11 @@
                     <input type="text" name="name" id="name" placeholder="Nome">
                     <input type="email" name="email" id="email" placeholder="E-mail">
                     <textarea name="message" id="message" placeholder="Mensagem"></textarea>
-                    <button>Enviar</button>
+                    <button>Fale comigo</button>
                 </form>
                 <ul>
                     <li>
-                        <a href="mailto:lucaseduardodacruz849@gmail.com" target="_blank" rel="noopener noreferrer"><ion-icon name="mail-outline"></ion-icon>lucaseduardodacruz849@gmail.com</a>
+                        <a href="mailto:lucaseduardodacruz849@gmail.com" target="_blank" rel="noopener noreferrer"><ion-icon name="mail-outline"></ion-icon></a>
                     </li>
                     
                     <li>
@@ -125,7 +136,7 @@
                     </li>
 
                     <li>
-                        <a href="tel:+5519987801978"><ion-icon name="call-outline" target="_blank" rel="noopener noreferrer"></ion-icon>(19) 987801978</a>
+                        <a href="tel:+5519987801978"><ion-icon name="call-outline" target="_blank" rel="noopener noreferrer"></ion-icon></a>
                     </li>
                 </ul>
             </div>
