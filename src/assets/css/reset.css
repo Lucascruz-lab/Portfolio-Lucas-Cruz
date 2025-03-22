@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--branco);
+    color: var(--preto);
     margin: 0;
 }
