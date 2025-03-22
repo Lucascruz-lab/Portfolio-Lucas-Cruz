@@ -1,0 +1,108 @@
+#Contato {
+    width: 100%;
+    height: 85vh;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.Contato-titulo {
+    color: var(--preto);
+    font-family: var(--font-family);
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    border-radius: 10px;
+    background-color: var(--cinza-claro);
+    padding: 10px;
+    width: 100%;
+    color: var(--preto);
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: var(--preto);
+    font-weight: 600;
+}
+
+form button {
+    border-radius: 30px;
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1em;
+    padding: 10px 20px;
+    width: 60%;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: var(--roxo-escuro);
+}
+
+.Contato-titulo ul {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    color: var(--preto);
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+#Contato ion-icon:hover {
+    color: var(--roxo);
+}
+
+
+ion-icon {
+    font-size: 24px;
+    color: var(--preto);
+    gap: 10px;
+}
