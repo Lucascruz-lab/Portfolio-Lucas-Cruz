@@ -1,0 +1,11 @@
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ion-icon:hover {
+    color: var(--roxo);
+}
