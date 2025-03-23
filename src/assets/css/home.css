@@ -4,9 +4,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: left;
+    padding: 40px;
     animation: fadeIn 2.5s ease-in-out;
+}
+
+#Home h4 {
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 #Home h1 {
@@ -15,29 +20,58 @@
 }
 
 #Home h1 span {
-    font-weight: 400;
+    font-weight: 700;
+    color: var(--roxo);
 }
 
-#Home button {
+#Home p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    padding: 10px 0;
+}
+
+#Home-botoes {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+
+#Home .botao-projeto {
+    width: 200px;
     background-color: var(--branco);
     color: var(--preto);
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
-    border: none;
     border-radius: 50px;
-    padding: 8px;
+    padding: 10px;
     margin-top: 25px;
-    margin: 10px;
     cursor: pointer;
-}
-#Home button a{
     text-decoration: none;
-    background: var(--preto);
-    color: var(--branco);
 }
 
-#Home button:hover{
+#Home .botao-contato {
+    width: 200px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#Home .botao-contato:hover{
+    background-color: var(--cinza-escuro);
+    transition: color 0.3s ease;
+}
+
+#Home .botao-projeto:hover {
     background-color: var(--roxo);
+    color: var(--branco);
     transition: color 0.3s ease;
 }
 
