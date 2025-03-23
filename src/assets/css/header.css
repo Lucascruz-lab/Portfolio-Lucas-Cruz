@@ -28,14 +28,20 @@ header {
 }
 
 #menu-navegacao ul li a {
-    position: relative;
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+    color: var(--preto);
+    font-size: 1.5rem;
     font-weight: 600;
+    gap: 20px;
 }
 
-#menu-navegacao a:hover{
+#whatsapp ion-icon {
+    font-size: 2.5rem;
+    color: var(--preto);
+
+}
+
+#menu-navegacao a:hover, #whatsapp ion-icon:hover {
     color: var(--roxo);
 }
 
