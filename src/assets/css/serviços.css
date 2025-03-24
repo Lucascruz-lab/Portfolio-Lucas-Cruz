@@ -1,11 +1,11 @@
 #Serviços {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -15,11 +15,17 @@
     font-size: clamp(28px, 5vw, 40px);
     font-weight: 700;
     margin-bottom: 30px;
+    display: flex;
+    text-align: left;
+}
+
+#Serviços-titulo span {
+    color: var(--roxo);
 }
 
 .Serviços-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 2fr 2fr;
     gap: 20px;
     padding: 20px;   
 }
@@ -28,14 +34,30 @@
     background-color: var(--cinza-claro);
     border-radius: 10px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 90%;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.card img {
+    width: auto;
+    height: 80px;
+}
+
+.card:hover{
+    background-color: var(--roxo);
+    color: var(--branco);
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card img:hover {
+    color: var(--branco);
 }
 
 .card h4 {
@@ -43,7 +65,21 @@
     margin-bottom: 10px;
 }
 
-.card p {
-    font-size: 1em;
-    line-height: 1.5;
+#Serviços a {
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#Serviços a ion-icon {
+    font-size: 2rem;
+}
+
+#Serviços a:hover {
+    color:var(--roxo);
 }
