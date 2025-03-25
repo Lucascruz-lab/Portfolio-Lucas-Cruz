@@ -6,6 +6,12 @@ footer {
     justify-content: space-around;
 }
 
+p {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 footer ion-icon:hover {
     color: var(--roxo);
 }
