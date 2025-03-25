@@ -18,17 +18,24 @@
     margin-bottom: 30px;
 }
 
-.Portfolio-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px; 
+.Portfolio-titulo span {
+    color: var(--roxo);
 }
 
+.Portfolio-cards {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    padding: 20px; 
+    width: auto;
+}
+
+
 .Portfolio-cards .card img {
-    width: 400px;
+    width: 350px;
     height: auto;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
     margin-bottom: 8px;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -36,12 +43,11 @@
 
 .Portfolio-cards .card img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
 .Portfolio-cards .card .titulo {
-    font-size: 38px;
-    font-family: "Roboto Slab", serif;
+    font-size: clamp(24px, 5vw, 32px);
+    font-family: var(--font-family);
 }
 
 .icons {
@@ -53,24 +59,38 @@
     padding: 0 0 1.2em 0;
 }
 
-.card ion-icon {
-    color: var(--branco); /* Cor do ícone HTML5 */
-    transition: transform 0.2s ease;
+.card {
+    background-color: var(--cinza-claro);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    text-align: center;
 }
 
-.card ion-icon:nth-child(2) {
-    color: var(--branco); /* Cor do ícone CSS3 */
-}
-
-.card ion-icon:nth-child(3){
+.card:hover {
+    background-color: var(--roxo);
     color: var(--branco);
+    transform: translateY(-10px);
+    
+}
+
+.card ion-icon {
+    color: var(--preto); /* Cor do ícone HTML5 */
+    transition: transform 0.2s ease;
 }
 
 .card ion-icon:hover {
     transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
 
-
+.card .botoes {
+    display: flex;
+    gap: 8px;
+}
 
 .Preview {
     border-radius: 10px;
@@ -96,7 +116,7 @@
 
 .Preview a, .Codigo a {
     text-decoration: none;
-    color:#fff;
+    color: var(--branco);
 }
 
 .Preview:hover{
