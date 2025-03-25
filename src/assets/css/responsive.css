@@ -2,7 +2,7 @@
 /* Estilo Base (Desktop-First) */
 @media (max-width: 1024px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
@@ -12,14 +12,14 @@
     }
 
     #menu-navegacao ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        gap: 10px;
+        gap: 20px;
     }
 
     #Home h1 {
         font-size: 36px;
-        text-align: center;
+        text-align: left;
     }
 
     #Sobre {
@@ -47,7 +47,7 @@
     }
 
     #Portfolio .Portfolio-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -102,10 +102,12 @@
 
     #menu-navegacao.show {
         display: flex; /* Mostra o menu quando ativado */
+        background-color: var(--branco);
     }
 
     #Home h1 {
         font-size: 30px;
+        text-align: left;
     }
 
     #Home button {
