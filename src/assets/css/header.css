@@ -8,8 +8,8 @@ header {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-#menu-logo {
-    font-size: 3em;
+#menu-logo p {
+    font-size: 2em;
     font-weight: 700;
 }
 
