@@ -1,12 +1,12 @@
 #Contato {
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 0;
 }
 
 .Contato-titulo {
@@ -16,6 +16,10 @@
     font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
+}
+
+.Contato-titulo span {
+    color: var(--roxo);
 }
 
 #form {
@@ -41,9 +45,10 @@ form {
 form input, form textarea {
     border-radius: 10px;
     background-color: var(--cinza-claro);
-    padding: 10px;
+    padding: 15px;
     width: 100%;
     color: var(--preto);
+    border: none;
 }
 
 form textarea {
@@ -52,17 +57,19 @@ form textarea {
 }
 
 form input::placeholder, form textarea::placeholder{
+    font-family: var(--font-family);
     color: var(--preto);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 form button {
     border-radius: 30px;
+    border: none;
     background-color: var(--roxo);
     color: var(--branco);
     font-weight: 700;
     font-size: 1em;
-    padding: 10px 20px;
+    padding: 15px;
     width: 60%;
 }
 
