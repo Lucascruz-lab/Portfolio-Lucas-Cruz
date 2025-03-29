@@ -13,8 +13,8 @@
 
 #Sobre img {
     border-radius: 10px;
-    max-width: 300px;
-    max-height: 350px;
+    width: 20%;
+    height: 50%;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -41,6 +41,11 @@
     font-weight: 700;
 }
 
+#Sobre-habilidades  h2 {
+    color: var(--preto);
+    font-size: clamp(24px, 4vw, 32px);
+}
+
 #Sobre-titulo span {
     color: var(--roxo);
 }
@@ -55,6 +60,7 @@
     color: var(--cinza-escuro);
     font-size: 1.2rem;
     font-weight: 500;
+
 }
 
 #Sobre-habilidades ion-icon {
