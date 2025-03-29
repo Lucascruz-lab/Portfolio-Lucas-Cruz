@@ -2,11 +2,27 @@
     width: 100%;
     height: calc(100vh - 60px) ;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 1em;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+#Home-conteudo {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    padding: 40px;
-    animation: fadeIn 2.5s ease-in-out;
+    text-align: left;
+    gap: 20px;
+    padding: 20px;
+}
+
+#Home #Home-imagem img {
+    width: 300px;
+    height: 350px;
+    border-radius: 1%;
 }
 
 #Home h4 {
