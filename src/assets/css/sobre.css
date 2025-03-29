@@ -59,6 +59,7 @@
 
 #Sobre-habilidades ion-icon {
     font-size: 3rem;
+    color: var(--preto);
 }
 
 #Sobre-habilidades ion-icon:hover {
