@@ -1,5 +1,3 @@
-# Portfolio - Lucas Cruz
-
 # Meu Portfólio
 
 Bem-vindo ao meu portfólio! Este é o meu site pessoal onde mostro meus projetos e compartilho informações sobre mim.
@@ -13,6 +11,7 @@ Este portfólio foi desenvolvido usando HTML, CSS e algumas bibliotecas externas
 - `index.html`: Página principal do portfólio.
 - `style.css`: Estilos personalizados para o site.
 - `script.js`: animação do botão de menu.
+- `form.js`: A lógica para o formulário enviar as mensagens.
 - `assets/`: Pasta contendo imagens e outros recursos estáticos.
 - `README.md`: Este arquivo de documentação.
 
@@ -20,7 +19,7 @@ Este portfólio foi desenvolvido usando HTML, CSS e algumas bibliotecas externas
 
 - **HTML5**: Marcações semânticas para a estrutura do site.
 - **CSS3**: Estilização personalizada para layout e design.
-- **JavaScript**: Criação do botão do menu de navegação.
+- **JavaScript**: Criação do botão do menu de navegação e lógica de enviar mensagem.
 - **Ionicons**: Biblioteca de ícones para ícones de redes sociais e contato.
 
 ## Deploy
