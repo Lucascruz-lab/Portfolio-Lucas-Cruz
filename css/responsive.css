@@ -1,202 +1,92 @@
-
 /* Estilo Base (Desktop-First) */
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     header {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu-hamburguer {
+        display: block; /* Exibe o ícone de hambúrguer */
     }
 
     #menu-logo {
         font-size: 2em;
-        margin-bottom: 10px;
-    }
-
-    #menu-navegacao ul {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    #Home h1 {
-        font-size: 36px;
-        text-align: left;
-    }
-
-    #Sobre {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    #Sobre img {
-        height: 230px;
-        max-width: 80%;
-    }
-
-    #Sobre-conteudo {
-        padding: 1em;
-    }
-
-    #Serviços {
-        padding: 20px;
-    }
-
-    .Serviços-cards {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    #Portfolio .Portfolio-cards {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    header {
-        flex-direction: row;
-        padding: 10px 20px;
-    }
-
-    #menu-logo {
-        font-size: 1.8em;
     }
 
     #menu-navegacao {
-        display: none; /* Esconde o menu de navegação */
+        display: none; /* Esconde o menu inicialmente */
+        flex-direction: column;
+        width: 100%;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #000;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
         padding: 20px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     }
 
-    /* Menu visível quando a classe 'show' é adicionada */
     #menu-navegacao.show {
-        display: flex;
+        display: flex; /* Mostra o menu quando a classe 'show' for adicionada */
     }
-
-    /* Ícone oculto quando o menu estiver aberto */
-    #menu-icon.hide {
-        display: none;
-    }
-
 
     #menu-navegacao ul {
-        display: flex;
         flex-direction: row;
-        gap: 8px;
-    }
-
-    #menu-navegacao ul li {
-        margin: 10px 0;
-    }
-
-    #menu-hamburguer {
-        display: block; /* Mostra o ícone no mobile */
-    }
-
-    #menu-navegacao.show {
-        display: flex; /* Mostra o menu quando ativado */
-        background-color: var(--branco);
-    }
-
-    #Home h1 {
-        font-size: 30px;
-        text-align: left;
-    }
-
-    #Home button {
-        font-size: 1.2em;
-        padding: 6px;
-    }
-
-    #Home-imagem {
-        max-width: 100%;
-        height: auto;
+        gap: 20px;
     }
 
     #Sobre img {
-        max-width: 100%;
         height: auto;
+        max-width: 100%;
     }
 
-    .Serviços-cards {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+    .Serviços-cards, .Portfolio-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
-        padding: 20px;
-        scroll-behavior: smooth;
     }
-
-    .Serviços-cards .card {
-        flex: 0 0 250px;
-        scroll-snap-align: start;
-        background-color: var(--cinza-claro);
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    }
-
-    .Serviços-cards .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }    
-    
-
-    #Portfolio {
-        padding: 20px;
-    }
-
-    .Portfolio-cards {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 20px;
-        padding: 20px;
-        scroll-behavior: smooth;
-    }
-
-    .Portfolio-cards .card {
-        flex: 0 0 250px;
-        scroll-snap-align: start;
-        background-color: var(--cinza-claro);
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    }
-
-    .Portfolio-cards .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }    
 }
 
 @media only screen and (max-width: 767px) {
     header {
         flex-direction: row;
-        align-items: center;
+        padding: 10px 20px;
+    }
+
+    #menu-navegacao {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    #menu-navegacao.show {
+        display: flex;
+    }
+
+    #Home h1 {
+        font-size: 30px;
+    }
+
+    .Serviços-cards, .Portfolio-cards {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 1023px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     #menu-logo {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    #menu-navegacao ul {
-        flex-direction: row;
-        gap: 5px;
+        font-size: 1em;
     }
 
     #menu-navegacao {
@@ -204,132 +94,58 @@
     }
 
     #menu-navegacao.show {
-        display: block;
+        display: flex;
     }
 
-    #menu-navegacao.hide {
-        display: none;
+    #menu-navegacao ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     #Home {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
         padding: 20px;
+    }
+
+    #Home-conteudo {
+        padding: 20px;
+        margin: 0 20px ;
     }
 
     #Home h1 {
         font-size: 24px;
     }
 
-    #Home p {
-        font-size: 1em;
-        padding: 10px 0;
-    }
-
-    #Home button {
-        font-size: 1em;
-        padding: 4px;
-    }
-
-    #Home-imagem {
-        width: 200px;
-        height: auto;
-    }
-
     #Sobre {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
         padding: 10px;
-    }
-
-    #Sobre-conteudo {
-        padding: 2em;
-        text-align: center;
-        gap: 10px;
-        overflow-wrap: break-word;
-    }
-
-    #Sobre-conteudo p {
-        font-size: 1em;
-        padding: 20px 0;
-
+        gap: 20px;
+        width: 100%;
+        height: 100vh;
     }
 
     #Sobre img {
-        width: 200px;
+        width: 300px;
         height: auto;
-        border-radius: 30px;
-    }
-
-    #Serviços, #Portfolio {
-        padding: 10px;
-    }
-
-    .Serviços-cards {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 20px;
-        padding: 20px;
-        scroll-behavior: smooth;
-    }
-
-    .Serviços-cards .card {
-        flex: 0 0 250px;
-        scroll-snap-align: start;
-        background-color: var(--cinza-claro);
         border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
     }
 
-    .Serviços-cards .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }    
-
-    .Serviços-cards, .Portfolio-cards {
-        grid-template-columns: 1fr;
-        gap: 10px;
+    #Sobre p { 
+        max-width: 90%;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .Portfolio-cards {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 20px;
-        padding: 20px;
-        scroll-behavior: smooth;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 30px;
     }
-
-    .Portfolio-cards .card {
-        flex: 0 0 250px;
-        scroll-snap-align: start;
-        background-color: var(--cinza-claro);
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    }
-
-    .Portfolio-cards .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    } 
-
-    .Preview, .Codigo {
-        font-size: 0.8em;
-        padding: 6px;
-    }
+    
 }
