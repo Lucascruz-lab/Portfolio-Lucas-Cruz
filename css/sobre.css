@@ -12,7 +12,7 @@
 
 #Sobre img {
     border-radius: 10px;
-    width: 50%;
+    width: 300px;
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
