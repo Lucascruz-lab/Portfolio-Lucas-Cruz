@@ -1,10 +1,13 @@
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    max-width: 100%;
-    padding: 10px 40px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: var(--branco);
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -24,7 +27,6 @@ header {
 
 #menu-navegacao ul li{
     list-style: none;
-    text-decoration: none;
 }
 
 #menu-navegacao ul li a {

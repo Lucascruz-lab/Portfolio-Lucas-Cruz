@@ -6,3 +6,7 @@
     --preto: #000000;
     --branco: #ffffff;
 }
+
+html {
+    scroll-behavior: smooth;
+}

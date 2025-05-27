@@ -12,7 +12,7 @@
         <button id="menu-hamburguer" aria-expanded="false" onclick="toggleMenu()">☰</button>
         <nav id="menu-navegacao">
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="#Home">Início</a></li>
                 <li><a href="#Sobre">Sobre</a></li>
                 <li><a href="#Serviços">Serviços</a></li>
                 <li><a href="#Portfolio">Projetos</a></li>
@@ -27,7 +27,7 @@
                 <h1>Desenvolvedor<br><span>Front</span>end</h1>
                 <p>Sou um desenvolvedor front-end do Brasil, criando interfaces<br>limpas, modernas e focadas na experiência do usuário.</p>
                 <div id="Home-botoes">
-                    <a class="botao-contato" href="#Contato">Entre em contato</a>
+                    <a class="botao-contato" href="#Contato">Fale comigo</a>
                     <a class="botao-projeto" href="#Portfolio">Projetos</a>
                 </div>
             </div>
@@ -72,8 +72,8 @@
         <section id="Portfolio">
             <h2 class="Portfolio-titulo">Meus <span>Projetos</span></h2>
             <div class="Portfolio-cards">
-                <div class="card">
-                    <img src="./src/assets/img/pagehome.jpeg" alt="imagem projeto do portfólio">
+                <div class="card_projeto">
+                    <img class="img_card_projeto" src="./src/assets/img/pagehome.jpeg" alt="imagem projeto do portfólio">
                     <h4 class="titulo">Portfólio</h4>
                     <div class="icons">
                         <ion-icon name="logo-html5"></ion-icon>
@@ -87,8 +87,8 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="./src/assets/img/img-blog.png" alt="imagem projeto blog">
+                <div class="card_projeto">
+                    <img class="img_card_projeto" src="./src/assets/img/img-blog.png" alt="imagem projeto blog">
                     <h4 class="titulo">Blog Sphere</h4>
                     <div class="icons">
                         <ion-icon name="logo-html5"></ion-icon>
@@ -102,8 +102,8 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="./src/assets/img/img-Telalogin.jpeg" alt="imagem projeto da tela de login">
+                <div class="card_projeto">
+                    <img class="img_card_projeto" src="./src/assets/img/img-Telalogin.jpeg" alt="imagem projeto da tela de login">
                     <h4 class="titulo">Tela de login</h4>
                     <div class="icons">
                         <ion-icon name="logo-html5"></ion-icon>
@@ -128,7 +128,8 @@
                     <textarea name="message" id="message" placeholder="Mensagem"></textarea>
                     <button type="submit">Fale comigo</button>
                 </form>
-                <ul>
+
+                <ul class="contato_lista">
                     <li>
                         <a href="mailto:lucaseduardodacruz849@gmail.com" target="_blank" rel="noopener noreferrer"><ion-icon name="mail-outline"></ion-icon></a>
                     </li>

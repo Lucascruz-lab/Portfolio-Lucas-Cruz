@@ -1,6 +1,6 @@
 #Portfolio {
     width: 100%;
-    height: 100vh;
+    gap: 2rem;
     background-color: var(--branco);
     display: flex;
     flex-direction: column;
@@ -23,18 +23,18 @@
 }
 
 .Portfolio-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 20px; 
     width: auto;
     margin-bottom: 30px;
 }
 
 
-.Portfolio-cards .card img {
-    width: 350px;
-    height: 100%;
+.img_card_projeto {
+    width: 100%;
+    height: auto;
     padding: 0;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,10 +55,10 @@
     padding: 0 0 1.2em 0;
 }
 
-.card {
+.card_projeto {
     background-color: var(--cinza-claro);
-    border-radius: 30px;
-    padding: 0;
+    border-radius: 10px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,9 +68,8 @@
 }
 
 .card:hover {
-    background-color: var(--roxo);
-    color: var(--branco);
     transform: translateY(-10px);
+    cursor: pointer;
 
 }
 
