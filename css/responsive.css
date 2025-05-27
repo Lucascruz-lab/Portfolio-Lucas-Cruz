@@ -96,6 +96,10 @@
     #menu-navegacao {
         display: none;
         position: absolute;
+    }
+
+    #menu-navegacao.show {
+        display: flex;
         top: 60px;
         right: 0;
         width: 100%;
@@ -103,10 +107,6 @@
         align-items: end;
         gap: 10px;
         padding: 20px;
-    }
-
-    #menu-navegacao.show {
-        display: flex;
     }
 
     #Home h1 {
@@ -132,6 +132,16 @@
 
     #menu-logo {
         font-size: 1em;
+    }
+
+    #menu-hamburguer {
+        display: block; /* Exibe o ícone de hambúrguer */
+        font-size: 2rem;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: var(--branco);
+        color: var(--preto);
+        border: none;
     }
 
     #menu-navegacao {
