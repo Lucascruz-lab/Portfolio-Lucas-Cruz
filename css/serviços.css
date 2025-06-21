@@ -1,7 +1,8 @@
 #Serviços {
     width: 100%;
-   
-    background-color: var(--branco);
+    margin-bottom: 30px;
+    background-color: var(--preto);
+    color: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,18 +10,14 @@
     text-align: center;
 }
 
-#Serviços-titulo {
-    color: var(--preto);
-    font-family: var(--font-family);
-    font-size: clamp(28px, 5vw, 40px);
+.Servicos_titulo {
+    color: var(--branco);
+    font-family: var(--font-title);
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 30px;
     display: flex;
     text-align: left;
-}
-
-#Serviços-titulo span {
-    color: var(--roxo);
 }
 
 .Serviços-cards {
@@ -32,8 +29,9 @@
 
 .card {
     background-color: var(--cinza-claro);
+    border: 1px solid var(--amarelo-escuro);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,23 +44,22 @@
 .card img {
     width: auto;
     height: 80px;
+    margin-bottom: 20px;
+    color: var(--branco);
 }
 
 
 .card h4 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-bottom: 10px;
+    font-family: var(--font-title);
 }
-
-#Serviços a {
-    color: var(--preto);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+.card p {
+    font-size: 1.1em;
+    color: var(--branco);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
 }
 
 #Serviços a ion-icon {

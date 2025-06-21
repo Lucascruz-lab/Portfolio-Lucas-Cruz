@@ -1,72 +1,40 @@
 #Sobre {
     display: flex;
-    
+    background-color: var(--preto);
+    color: var(--branco);
     align-items: center;
-    justify-content: left;
-    background-color: var(--branco);
+    justify-content: center;
     width: 100%;
-    
     padding: 10px;
     gap: 20px;
-}
-
-#Sobre img {
-    border-radius: 10px;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-#Sobre img:hover {
-    transform: scale(1.05);
-    box-sizing: 0 8px 15px rgba(0,0,0,0.3);
 }
 
 #Sobre-conteudo {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 3em;
 }
 
-#Sobre-conteudo h2 {
-    color: var(--preto);
-    font-size: clamp(28px, 5vw, 40px);
-    font-family: var(--font-family);
+.Sobre_titulo {
+    color: var(--branco);
+    font-size: 2.5em;
+    font-family: var(--font-title);
     font-weight: 700;
-}
-
-#Sobre-habilidades  h2 {
-    color: var(--preto);
-    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 20px;
 }
 
 #Sobre-titulo span {
-    color: var(--roxo);
+    color: var(--amerelo-escuro);
 }
 
-#Sobre-conteudo h4 {
-    font-size: clamp(18px, 4vw, 24px);
-    color: var(--preto);
-    font-weight: 700;
-}
-
-#Sobre-conteudo p {
-    color: var(--cinza-escuro);
+.conteudo_sobre {
+    color: var(--branco);
     font-size: 1.2rem;
     font-weight: 500;
-
-}
-
-#Sobre-habilidades ion-icon {
-    font-size: 3rem;
-    color: var(--preto);
-}
-
-#Sobre-habilidades ion-icon:hover {
-    color: var(--roxo);
+    line-height: 1.5;
+    text-align: left;
 }
