@@ -3,15 +3,27 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--cinza-escuro);
 }
 
-p {
+.copy {
     font-family: var(--font-family);
     font-size: 1.2rem;
     font-weight: 500;
+    color: var(--branco);
 }
 
-footer ion-icon:hover {
-    color: var(--roxo);
+footer .social-icons {
+    color: var(--amarelo-claro);
+    font-size: 1.5rem;
+    gap: 2px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+footer .social-icons a:hover {
+    color: var(--amarelo-escuro);
 }

@@ -1,6 +1,6 @@
 #Serviços {
     width: 100%;
-    margin-bottom: 30px;
+    
     background-color: var(--preto);
     color: var(--branco);
     display: flex;
@@ -24,7 +24,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;   
+    padding: 20px;  
+    margin-bottom: 30px; 
 }
 
 .card {
@@ -39,6 +40,7 @@
     width: 100%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }
 
 .card img {
