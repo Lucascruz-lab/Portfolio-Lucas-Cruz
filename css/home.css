@@ -35,6 +35,8 @@
     font-size: 5em;
     font-weight:  700;
     font-family: var(--font-title);
+    padding: 0 2.5em;
+    text-align: center;
 }
 
 .legenda_home {

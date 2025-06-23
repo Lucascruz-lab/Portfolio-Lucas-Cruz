@@ -1,126 +1,4 @@
-/* Estilo Base (Desktop-First) */
-@media only screen and (min-width: 1440px) {
-    header {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 2rem;
-    }
-
-    #menu-hamburguer {
-        display: block; /* Exibe o ícone de hambúrguer */
-        margin-bottom: 2rem;
-    }
-
-    #menu-logo {
-        font-size: 1.5em;
-    }
-
-    #menu-navegacao {
-        display: none; /* Esconde o menu inicialmente */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        padding: 20px;
-    }
-
-    #menu-navegacao.show {
-        display: flex; /* Mostra o menu quando a classe 'show' for adicionada */
-        flex-direction: column;
-        background-color: var(--branco);
-        width: 100%;
-        height: 100vh;
-        z-index: 1000;
-        align-items: center;
-        justify-content: center;
-    }
-       
-    #menu-navegacao ul {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #Sobre img {
-        height: auto;
-        width: 100%;
-
-    }
-
-    .Serviços-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1em;
-        width: 100%;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-        background-color: var(--cinza-claro);
-        border-radius: 10px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .Portfolio-cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
-        width: 100%;
-    }
-
-    .card_projeto {
-        width: 100%;
-    }
-
-    .img_card_projeto {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    header {
-        flex-direction: row;
-        padding: 10px 20px;
-    }
-
-    #menu-navegacao {
-        display: none;
-        position: absolute;
-    }
-
-    #menu-navegacao.show {
-        display: flex;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: end;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    #Home h1 {
-        font-size: 30px;
-    }
-
-    .Serviços-cards, .Portfolio-cards {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 20px;
-        padding: 20px;
-    }
-}
+/* Estilos Responsivos para mobile */
 
 @media only screen and (min-width: 390px) and (max-width: 1023px) {
     header {
@@ -130,8 +8,10 @@
         padding: 10px 20px;
     }
 
-    #menu-logo {
-        font-size: 1em;
+    #menu-logo, #menu-hamburguer {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: row;
     }
 
     #menu-hamburguer {
@@ -139,10 +19,10 @@
         font-size: 2rem;
         cursor: pointer;
         border-radius: 5px;
-        background-color: var(--branco);
+        background-color: transparent;
         color: var(--preto);
         border: none;
-        outline: none;;
+        outline: none;
     }
 
     #menu-navegacao {
@@ -151,6 +31,7 @@
 
     #menu-navegacao.show {
         display: flex;
+        flex-direction: column;
         background-color: var(--branco);
         width: 100%;
         height: 100vh;
@@ -177,8 +58,16 @@
         width: 100%;
 
     }
-
-    .titulo_home, .sobre_titulo, .servico_titulo, .portfolio_titulo, .contato_titulo {
+    .titulo_home{
+        font-size: 2.8em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+     
+    .Sobre_titulo, 
+    .Servico_titulo, 
+    .Portfolio_titulo, 
+    .Contato_titulo {
         font-size: 2.5em;
     }
 
@@ -234,6 +123,7 @@
 
     .Serviços-cards {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         gap: 10px;
         padding: 30px;
@@ -262,4 +152,159 @@
         font-size: 2rem;
     }
     
+}
+
+/*Estilos Responsivos para desktop*/
+@media only screen and (min-width: 1024px) {
+
+    /* ---------- HEADER ---------- */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        width: 100%;
+    }
+
+    #menu-hamburguer {
+        display: none; /* Esconde hambúrguer no desktop */
+    }
+
+    #menu-navegacao {
+        display: flex !important; /* Garante que apareça no desktop */
+        flex-direction: row;
+        gap: 2rem;
+        position: static;
+        height: auto;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu-navegacao ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    #menu-navegacao li {
+        list-style: none;
+    }
+
+    #menu-navegacao a {
+        text-decoration: none;
+        color: var(--preto);
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+
+    #menu-navegacao a:hover {
+        color: var(--amarelo-escuro);
+    }
+
+    /* ---------- HOME ---------- */
+    #Home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 60px;
+    }
+
+    #Home-conteudo {
+        width: 50%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .titulo_home {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    /* ---------- SOBRE ---------- */
+    #Sobre {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 60px;
+        text-align: left;
+    }
+
+    .Sobre_titulo, 
+    .Portfolio_titulo,
+    .Servicos_titulo,
+    .Contato_titulo {
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+    }
+
+    .conteudo_sobre {
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    /* ---------- SERVIÇOS ---------- */
+    .Serviços-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 60px;
+    }
+
+    /* ---------- PORTFÓLIO ---------- */
+    .Portfolio-cards, 
+    .Serviços-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 60px;
+    }
+
+    .card_projeto {
+        width: 100%;
+        height: auto;
+    }
+
+    .img_card_projeto {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 50%;
+        height: auto;
+        padding: 10em;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* ---------- CONTATO ---------- */
+    #Contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+        gap: 60px;
+    }
+
+    .contato_lista {
+        margin-bottom: 3rem;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .social-icons ion-icon {
+        font-size: 2rem;
+    }
 }
