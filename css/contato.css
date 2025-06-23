@@ -1,6 +1,7 @@
 #Contato {
     width: 100%;
-    background-color: var(--branco);
+    background-color: var(--preto);
+    color: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,17 +9,20 @@
     padding: 0;
 }
 
-.Contato-titulo {
-    color: var(--preto);
-    font-family: var(--font-family);
-    font-size: clamp(28px, 5vw, 40px);
+.Contato_titulo {
+    font-family: var(--font-title);
+    font-size: 2.5em;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.Contato-titulo span {
-    color: var(--roxo);
+.legenda_contato {
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--azul-claro);
+    margin-bottom: 20px;
 }
 
 #form {
@@ -41,13 +45,16 @@ form {
     align-items: center;
 }
 
-form input, form textarea {
+form input, 
+form textarea {
     border-radius: 10px;
     background-color: var(--cinza-claro);
     padding: 15px;
-    width: 100%;
-    color: var(--preto);
-    border: none;
+    width: 80%;
+    color: var(--branco);
+    border: 1px solid var(--amarelo-claro);
+    font-family: var(--font-family);
+    outline: none;
 }
 
 form textarea {
@@ -55,16 +62,18 @@ form textarea {
     height: 100px;
 }
 
-form input::placeholder, form textarea::placeholder{
+form input::placeholder, 
+form textarea::placeholder {
     font-family: var(--font-family);
-    color: var(--preto);
+    color: var(--branco);
     font-weight: 700;
+    opacity: 0.7;
 }
 
-form button {
+form .botao {
     border-radius: 30px;
-    border: none;
-    background-color: var(--roxo);
+    border: 1px solid var(--amarelo-escuro);
+    background-color: transparent;
     color: var(--branco);
     font-weight: 700;
     font-size: 1em;
@@ -72,43 +81,44 @@ form button {
     width: 60%;
 }
 
-form button:hover {
+form .botao:hover {
     cursor: pointer;
-    background-color: var(--roxo-escuro);
+    background-color: var(--amerelo-claro);
 }
 
-.Contato-titulo ul {
+.contato_lista {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 20px;
-    color: var(--preto);
+    color: var(--amarelo-claro);
 }
 
-ul li {
+.contato_lista li {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-ul li a {
+.contato_lista li a {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: var(--preto);
+    color: var(--amarelo-escuro);
 }
 
 #Contato ion-icon:hover {
-    color: var(--roxo);
+    color: var(--amarelo-escuro);
 }
 
 
 ion-icon {
     font-size: 24px;
-    color: var(--preto);
+    color: var(--amarelo-claro);
     gap: 10px;
 }
