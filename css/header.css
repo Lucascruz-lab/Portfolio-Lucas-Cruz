@@ -7,7 +7,11 @@ header {
     top: 0;
     z-index: 1000;
     position: fixed;
-    background-color: var(--branco);
+
+    background-color: rgba(255, 255, 255, 0.6); /* fundo semi-transparente */
+    backdrop-filter: blur(15px); /* efeito de blur */
+    -webkit-backdrop-filter: blur(15px); /* suporte para Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* linha sutil na borda */
     animation: fadeIn 1.5s ease-in-out;
 }
 
