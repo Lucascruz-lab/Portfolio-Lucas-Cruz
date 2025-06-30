@@ -66,9 +66,28 @@
     text-align: center;
 }
 
-.card_projeto:hover {
-    transform: translateY(-10px);
+.botao_projeto {
+    background-color: var(--preto);
+    color: var(--branco);
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: var(--font-family);
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao_projeto:hover {
+    background-color: var(--azul-claro);
+    color: var(--preto);
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.legenda_card {
+    font-size: 1rem;
+    color: var(--branco);
+    font-family: var(--font-family);
+    text-align: left;
+    margin: 10px 0 20px 0;
 }

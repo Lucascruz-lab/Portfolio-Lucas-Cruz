@@ -11,21 +11,6 @@
     cursor: pointer;
 }
 
-.botao-link {
-  display: inline-block;
-  padding: 10px 16px;
-  margin: 10px 8px 0;
-  background-color: #fff;
-  color: #111;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: 0.3s ease;
-}
-
-.botao-link:hover {
-  background-color: #eee;
-}
-
 .modal_imagem {
     width: 100%;
     height: auto;
@@ -57,3 +42,63 @@ dialog::backdrop {
 }
 
 /* estilizar texto, titulo, legendas e botões */
+
+.titulo_modal {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--branco);
+    font-family: var(--font-title);
+}
+
+.tags_modal {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--branco);
+    font-family: var(--font-family);
+    text-align: left;
+}
+
+.legenda_modal {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--branco);
+    font-family: var(--font-family);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.view{
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 10px 8px 0;
+     background-color: rgba(255, 255, 255, 0.6); /* fundo semi-transparente */
+    backdrop-filter: blur(15px); /* efeito de blur */
+    -webkit-backdrop-filter: blur(15px);
+    color: #111;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    font-weight: 2rem;
+}
+
+.view:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.github {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 10px 8px 0;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    font-weight: 2rem;
+}
+
+.github:hover {
+    background-color: #060606;
+}
