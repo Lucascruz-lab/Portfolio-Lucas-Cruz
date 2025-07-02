@@ -151,6 +151,17 @@
     #whatsapp ion-icon {
         font-size: 2rem;
     }
+
+    .orbe-1 {
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .orbe-2 {
+        width: 300px;
+        height: 300px;
+    }
     
 }
 
