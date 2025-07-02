@@ -1,6 +1,6 @@
 #Contato {
     width: 100%;
-    background-color: var(--preto);
+    background-color: transparent;
     color: var(--branco);
     display: flex;
     flex-direction: column;

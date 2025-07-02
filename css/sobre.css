@@ -1,6 +1,6 @@
 #Sobre {
     display: flex;
-    background-color: var(--preto);
+    background-color: transparent;
     color: var(--branco);
     align-items: center;
     justify-content: center;

@@ -1,7 +1,7 @@
 #Portfolio {
     width: 100%;
     gap: 2rem;
-    background-color: var(--preto);
+    background-color: transparent;
     color:var(--branco);
     display: flex;
     flex-direction: column;
@@ -64,12 +64,13 @@
     height: auto;
     width: 100%;
     text-align: center;
+    border: 1px solid var(--azul-claro);
 }
 
 .botao_projeto {
     background-color: var(--preto);
     color: var(--branco);
-    border: 1px solid var(--azul-claro);
+    border: 1px solid var(--amarelo-claro);
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -79,7 +80,7 @@
 }
 
 .botao_projeto:hover {
-    background-color: var(--azul-claro);
+    background-color: var(--amarelo-escuro);
     color: var(--preto);
     transform: scale(1.05);
 }
