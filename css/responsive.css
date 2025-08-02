@@ -271,8 +271,11 @@
     /* ---------- PORTFÓLIO ---------- */
     .Portfolio-cards, 
     .Serviços-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        justify-content: center;
         gap: 1rem;
         padding: 60px;
     }
@@ -285,7 +288,7 @@
     .img_card_projeto {
         width: 100%;
         object-fit: cover;
-        height: 300px;
+        height: auto;
         border-radius: 10px;
         margin-bottom: 20px;
     }
@@ -302,19 +305,18 @@
     #Contato {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
         padding: 8rem;
-        gap: 10px;
+        gap: 5px;
     }
 
     .Contato_titulo {
         font-size: 3rem;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .contato_lista {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .social-icons {
