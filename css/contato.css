@@ -25,95 +25,32 @@
     margin-bottom: 20px;
 }
 
-#form {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-form {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, 
-form textarea {
-    border-radius: 10px;
-    background-color: var(--cinza-claro);
-    padding: 15px;
-    width: 80%;
-    color: var(--branco);
-    border: 1px solid var(--amarelo-claro);
-    font-family: var(--font-family);
-    outline: none;
-}
-
-form textarea {
-    resize: none;
-    height: 100px;
-}
-
-form input::placeholder, 
-form textarea::placeholder {
-    font-family: var(--font-family);
-    color: var(--branco);
-    font-weight: 700;
-    opacity: 0.7;
-}
-
-form .botao {
-    border-radius: 30px;
-    border: 1px solid var(--amarelo-escuro);
-    background-color: transparent;
-    color: var(--branco);
-    font-weight: 700;
-    font-size: 1em;
-    padding: 15px;
-    width: 60%;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-form .botao:hover {
-    cursor: pointer;
-    background-color: var(--amarelo-claro);
-}
-
 .contato_lista {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    padding: 20px;
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 20px;
-    color: var(--amarelo-claro);
+    flex-direction: row;
 }
 
 .contato_lista li {
+    background-color: #fff5f577;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur();
+    padding: 10px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
+.contato_lista li:hover {
+    background-color: var(--branco);
+    transition: background-color 0.3s ease;
+}
 .contato_lista li a {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: var(--amarelo-escuro);
-}
-
-#Contato ion-icon:hover {
     color: var(--amarelo-escuro);
 }
 
