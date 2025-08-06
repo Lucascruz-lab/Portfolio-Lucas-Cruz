@@ -95,6 +95,18 @@
         line-height: 1.5;
     }
 
+    .skills {
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .skills-icons {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .Portfolio-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);

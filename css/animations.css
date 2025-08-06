@@ -8,7 +8,7 @@
     animation: slideRight 0.6s ease-in-out forwards;
 }
 
-.Sobre_titulo,
+/*.Sobre_titulo,
 .Portfolio_titulo,
 .Servicos_titulo,
 .Contato_titulo {
@@ -17,12 +17,12 @@
     animation-range: cover 0% cover 100%;
     will-change: transform, opacity;
     animation-fill-mode: both;
-}
+}*/
 
 .conteudo_sobre,
 .legenda_portfolio,
 .legenda_contato,
-.skills_titulo{
+.icones{
     animation: slideRight 0.5s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 80%;
@@ -45,6 +45,27 @@
 
 .orbe-2 {
     animation: orbe-2-motion 25s infinite ease-in-out;
+}
+
+.skills_titulo,
+.Sobre_titulo,
+.Portfolio_titulo,
+.Servicos_titulo,
+.Contato_titulo {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.4s ease-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 80%;
+    will-change: transform, opacity;
+    animation-fill-mode: both;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
