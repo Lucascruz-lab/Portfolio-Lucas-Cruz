@@ -35,16 +35,18 @@
 .contato_lista li {
     background-color: #fff5f577;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur();
+    -webkit-backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2);
 }
 .contato_lista li:hover {
     background-color: var(--branco);
     transition: background-color 0.3s ease;
+    transform: scale(1.1);
 }
 .contato_lista li a {
     display: flex;
